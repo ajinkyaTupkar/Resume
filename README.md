@@ -1,3 +1,3 @@
 # Resume
 
-##Resume with Latex files
+Resume with Latex files
