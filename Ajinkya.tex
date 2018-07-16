@@ -1,0 +1,173 @@
+%
+% LaTeX source for resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[letterpaper,margin=0.55in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\usepackage{enumitem}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Ajinkya Tupkar Jain}{}{}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:tupkarajinkya@gmail.com}{tupkarajinkya\mbox{}@\mbox{}gmail.com}\sbull +91-997-434-1333\sbull
+%\\
+%F1202, Mantri Celestia\sbull
+Hyderabad\sbull TS 500084\sbull INDIA
+%sbull\href{https://github.com/ashutoshbaghel}{GitHub}
+\sbull\href{https://www.linkedin.com/in/ajinkya-tupkar-jain-a9b55157/}{LinkedIn}
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{}{Indian Institute of Technology Gandhinagar}}
+  {\textsc{Gandhinagar, Gujarat, India}} {%
+  \headedsubsection
+    {Bachelor of Technology (B.Tech.)~in Electrical Engineering with Minor in Computer Science And Engineering, \textit{Percentage:~83.6\%}}
+    {July~'12 -- May~'16} {}
+}
+
+\headedsection
+{\href{}{St. Arnold's Hr. Sec. School}}
+{\textsc{Indore, MP, India}} {%
+  \headedsubsection
+  {Senior Secondary (AISSCE, CBSE), \textit{Percentage:~91\%}}
+  {April~'11} {}
+
+  \headedsubsection
+  {Secondary (AISSE, CBSE), \textit{Percentage:~92\%}}
+  {April~'09} {}
+  
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{}{\textbf{Software Engineer}}}
+  {\textbf{Optum, A UnitedHealth Group Company}}
+
+  {%
+  \headedsubsection
+    {Optum Provisioning}
+    {October~'16 -- Jan~'18}
+    {\bodytext{
+    \begin{itemize}
+    %\item Part of 13-member team building the multi-petabyte scale data plane for Microsoft's cloud backup products.
+    % \item Revamped slower legacy systems to reduce intake time from 24 to 8 hours for TBs of data
+    \item Handled end to end development for the product responsible for role based provisioning across the organization.
+    \item Worked on latest tech stack including Spring Boot, Angular 4, Maven, Redis, SQL, Tomcat, Wildfly, JSF.
+     \item Actively participated in transition of dev-ops activities from XL Deployments to Jenkins Pipelines. Worked with OpenShift deployments and ELK stack for Logging.
+      \item Actively involved in the development of next generation UI for the product. Worked on Angular 4 for UI, Spring Boot for MicroServices and Zuul implementation for authorization gateway. 
+      \item Performed regular testing and wrote automated tests for UI using Selenium framework. Worked on performance testing of APIs using JMeter and New Relic.
+      \item Actively involved with end-to-end deployment activities till production of Angular UI.
+      \item Received a performance award for Redis implementation.
+    \end{itemize}
+}}
+}
+  {%
+  \headedsubsection
+    {Federated Data Storage}
+    {Jan~'18 -- June~'18}
+    {\bodytext{
+    \begin{itemize}
+    \item Worked on product enhancements to accommodate customer requirements.
+    \item Created apis and hook based workflows on the apis to trigger processes based on api calls.  
+    \item Worked on a diverse tech stack including MongoDB, RabbitMQ, OpenOffice, MySQL.
+    \item Received a performance award for timely delivery in a very tight deadline.
+    \end{itemize}
+}}
+}
+  {%
+  \headedsubsection
+    {Identity Matching Solutions}
+    {June~'18 -- Present}
+    {\bodytext{
+    \begin{itemize}
+    \item Working on migration of product from BDPaas to public cloud (AWS).
+    \item Working on Big Data tech stack including Hadoop, Hbase, HDFS, Elastic Search, MapReduce, terraform and Kubernetes.
+    \end{itemize}
+}}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Selected Projects}
+% \vspace{0.15cm}
+%\begin{itemize}[leftmargin=*]
+
+  {%
+  \headedsubsection{Appointment Scheduler}
+    {Optum Global Hackathon - 2017}
+    {\bodytext{
+    \begin{itemize}
+    \item Used Machine Learning algorithms to predict No-show of a patient for an appointment.
+    \item Used the prediction to overbook and schedule the appointments.
+    \end{itemize}
+}}
+}
+  {%
+  \headedsubsection
+    {Telemedicine Platform using Blockchain}
+    {Optum Global Hackathon - 2018}
+    {\bodytext{
+    \begin{itemize}
+    \item Developed a blockchain based telemedicine platform.
+    \item Provided an option of 2nd opinion and deducted fee accordingly.
+    \end{itemize}
+}}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Additional Activities}
+\vspace{0.15cm}
+\begin{itemize}[labelindent=1.5em,labelsep=-0.3cm,leftmargin=*]
+\item \headedsubsection 
+{\href{}{\normalfont Hackathon Enthusiast
+}}{{{}}}
+{\bodytext{Winner under Machine Learning category for Optum Global Hackathon 2017, participated in the 2018 hackathon.}}
+
+\item \headedsubsection 
+{{\normalfont Convener, Student Senate (IIT Gandhinagar, 2015-16)
+}}{{{}}}
+{\bodytext{Elected representative solely responsible for the day to day activities of the Student Senate.}}
+
+
+\item \headedsubsection 
+{{\normalfont Student Coordinator, Career Development Services (Placement Office)(IIT Gandhinagar, 2015-16)
+}}{{{}}}
+{\bodytext{Worked as a student coordinator to invite companies and institutes for internships and placements.}}
+\end{itemize}
+
+\end{document}
